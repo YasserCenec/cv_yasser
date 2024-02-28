@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Yasser El Haidouri</title>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("DOMContentLoaded", reveal); // Asegurar que se ejecuta al cargar
+    </script>
+</head>
+
+<body>
+    <div class="foto">
+        <img src="img_cv.JPG" alt="Yasser El Haidouri">
+    </div>
+    <h1>Yasser El Haidouri</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#educacion" class="boton">EDUCACIÓN Y FORMACIÓN</a></li>
+            <li><a href="#experiencia" class="boton">EXPERIENCIA LABORAL</a></li>
+            <li><a href="#idiomas" class="boton">COMPETENCIAS DE IDIOMAS</a></li>
+            <li><a href="#digitales" class="boton">COMPETENCIAS DIGITALES</a></li>
+        </ul>
+    </nav>
+
+    <div class="margin">
+        <p><strong>Fecha de nacimiento:</strong> 19/06/1998</p>
+        <p><strong>Nacionalidad:</strong> Española</p>
+        <p><strong>Número de teléfono:</strong> (+34) 640646956 (Móvil)</p>
+        <p><strong>Dirección de correo electrónico:</strong> yassertorre98@gmail.com</p>
+        <p><strong>Dirección:</strong> Calle Leonardo Talens Rivas, Torremolinos, Málaga, 29620, España.</p>
+    </div>
+    
+    <fieldset id="educacion" class="reveal">
+        <legend><strong>EDUCACIÓN Y FORMACIÓN</strong></legend>
+        <ul>
+            <li>
+                <p>01/10/2022 – 21/06/2024 Málaga, España</p>
+                <strong>FPIGS DESARROLLO DE APLICACIONES WEB</strong> C.D.P. CENEC-MALAGA || <a
+                    href="https://www.cenecmalaga.es/">cenecmalaga.es</a>
+                <ul>
+                    <li><strong>1º curso FPIGS Desarrollo de Aplicaciones WEB</strong></li>
+                    <ol>
+                        <li>Sistemas Informáticos</li>
+                        <li>Bases de datos</li>
+                        <li>Programación</li>
+                        <li>Lenguaje de marcas y sistemas de gestión de información</li>
+                        <li>Entornos de desarrollo</li>
+                        <li>Formación y orientación laboral</li>
+                    </ol><br>
+                    <li><strong>2º curso FPIGS Desarrollo de Aplicaciones WEB</strong></li>
+                    <ol>
+                        <li>Desarrollo Web Cliente</li>
+                        <li>Diseño de interfaces</li>
+                        <li>Desarrollo Web Servidor</li>
+                        <li>Despliegue Aplicaciones Web</li>
+                        <li>Implantación aplicaciones web</li>
+                        <li>Empresa e iniciativa emprendedora</li>
+                    </ol>
+                </ul>
+            </li>
+            <li>
+                <p>15/09/2018 – 20/06/2021 Málaga, España</p>
+                <strong>SISTEMAS MICROINFORMÁTICOS Y REDES I.E.S PLAYAMAR</strong> Torremolinos, Málaga, España || <a
+                    href="https://iesplayamar.es/">iesplayamar.es</a>
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset class="reveal" id="experiencia">
+        <legend><strong>EXPERIENCIA LABORAL</strong></legend>
+        <ul>
+            <li>
+                <p>03/2021 – 06/2021 Torremolinos, Málaga, España</p>
+                <strong>PRÁCTICAS DE SOPORTE TÉCNICO INFORMÁTICO</strong> AYUNTAMIENTO DE TORREMOLINOS.
+            </li>
+            <li>
+                <p>07/2021 – 02/2022 Torremolinos, Málaga, España</p>
+                <strong>PEÓN DE LIMPIEZA (Manteniemento de piscina, limpieza de apartamentos y comunidad)</strong> AGEUN
+                SL.
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset class="reveal" id="idiomas">
+        <legend><strong>COMPETENCIAS DE IDIOMAS</strong></legend>
+        <p>Otros idiomas: INGLÉS, ÁRABE.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Idioma</th>
+                    <th>Comprensión auditiva</th>
+                    <th>Comprensión lectora</th>
+                    <th>Producción oral</th>
+                    <th>Interacción oral</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>INGLÉS</td>
+                    <td>A2</td>
+                    <td>A2</td>
+                    <td>A2</td>
+                    <td>A2</td>
+                </tr>
+                <tr>
+                    <td>ÁRABE</td>
+                    <td>A2</td>
+                    <td>A1</td>
+                    <td>A2</td>
+                    <td>A2</td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <fieldset class="reveal" id="digitales">
+        <legend><strong>COMPETENCIAS DIGITALES</strong></legend>
+        <p>Las siguientes habilidades y herramientas tecnológicas:</p>
+        <ul>
+            <li>JAVA - UML - HTML5 - XML - CSS | JAVASCRIPT | ANGULAR | PHP | PHPMYADMIN | WORDPRESS</li>
+            <li>SQL SERVER | MYSQL | MongoDB | GITHUB | JOOMLA | XAMPP</li>
+            <li>APACHE | LINUX | VIRTUALIZACIÓN | CENTOS 8 | WINDOWS SERVER 2016 | HARDWARE & SOFTWARE</li>
+            <li>CRYPTOPHANE | CLONEZILLA | Microsoft Office y LibreOffice</li>
+        </ul>
+    </fieldset>
+
+</body>
+
+</html>
